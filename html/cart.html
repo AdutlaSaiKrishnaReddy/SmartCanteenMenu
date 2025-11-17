@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart</title>
+
+    <link rel="stylesheet" href="../Styles/cart.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <style>
+      .header {
+        height: 40px !important;
+        padding: 10px 0px !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <!-- CART BODY -->
+    <div class="cart-container">
+      <h1>Your Cart</h1>
+
+      <table id="cartTable">
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <!-- TOTAL -->
+      <h2 id="totalAmount">Total: $0</h2>
+
+      <!-- CHECKOUT BUTTON -->
+      <button id="checkoutBtn" class="checkout-btn" onclick="proceedCheckout()">
+        Proceed to Checkout
+      </button>
+    </div>
+    <script src="../Javascript/cart.js"></script>
+  </body>
+</html>
